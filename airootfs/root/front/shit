@@ -1,0 +1,20 @@
+"twitch":{
+  "href":"https://www.twitch.tv/",
+  "logo":"1280px-Twitch_logo_(wordmark_only).svg.png"
+  },
+"youtube":{
+  "href":"https://www.youtube.com/",
+  "logo":"2000px-YouTube_Logo_2017.svg.png"
+  },
+"cytu.be":{
+  "href":"https://www.cytu.be/",
+  "logo":"cytulogo.jpg"
+  },
+"cheezburger":{
+  "href":"https://www.cheezburger.com/",
+  "logo":"cheez.png"
+  },
+"4chan":{
+  "href":"https://www.4chan.org/",
+  "logo":"4chan_Logo.png"
+  }

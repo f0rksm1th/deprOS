@@ -1,0 +1,20 @@
+"html5 games":{
+  "href":"https://browsergameshub.com/",
+  "logo":"preview.png"
+  },
+"steam":{
+  "href":"https://www.steampowered.com/",
+  "logo":"index.jpeg"
+  },
+"battle.net":{
+  "href":"https://www.battle.net/",
+  "logo":"activision_blizzard.png"
+  },
+"playstation":{
+  "href":"https://store.playstation.com/de-de/home/games",
+  "logo":"Playstation-store-logo-283x125.jpg"
+  },
+"ign":{
+  "href":"https://www.ign.com/",
+  "logo":"IGN-Logo-RedBlack.png"
+  }

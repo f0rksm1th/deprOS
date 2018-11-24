@@ -1,0 +1,2 @@
+#xinit
+./desktop.sh

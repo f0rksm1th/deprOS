@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta lang="de"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>deprOS Desktop</title>
+  <style>
+  body {
+    background-color: #f9f9fa;
+    color: #eee;
+    overflow: hidden;
+    vertical-align:middle;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #tablewrap{
+    position: fixed;
+    height:100%;
+    width:100%;
+  }
+  table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%,-50%);
+    border-spacing:1.5em;
+  }
+  td {
+    width: 5em;
+    height: 5em;
+    transition: padding-left 1s, padding-right 1s;
+    position: relative;
+  }
+
+  .circle {
+    top: 0;
+    bottom: 0;
+    width: 5em;
+    height: 5em;
+    padding: 1px;
+    border-radius: 2.5em;
+    text-align: center;
+    vertical-align:middle;
+    float:left;
+    position: absolute;
+    line-height:4.5em;
+
+    top:2em;
+    -moz-user-select: none;
+    user-select: none;
+    padding: 0;
+    box-shadow:
+      inset 0 2em 10em -5em rgba(255,255,255,0.3),
+      0 0em 0.5em -0.2em rgba(100,100,100,1),
+      0 0em 2em -0.75em rgba(100,100,100,0.75),
+      0 0em 3em -0.5em rgba(100,100,100,0.5),
+      0 0em 3em -0.25em rgba(100,100,100,0.2);
+  }
+
+  .subcirclewrap{
+    position:relative;
+    width: 7em;
+    height:7em;
+    top: -2.1em;
+    left:-1em;
+    transition: opacity .8s; opacity: 0; pointer-events: none;
+  }
+  .subcirclewrap a {
+  	display: block;
+  	position: absolute;
+  	top: 50%; left: 50%;
+  	width: 4em; height: 4em;
+  	margin: -2em; /* 2em = 4em/2 */ /* half the width */
+  }
+  .pos0 { transform: rotate(54deg) translate(5.2em) rotate(-54deg); } /* 9em = half the width of the wrapper */
+  .pos1 { transform: rotate(126deg) translate(5.2em) rotate(-126deg); }
+  .pos2 { transform: rotate(198deg) translate(5.2em) rotate(-198deg); }
+  .pos3 { transform: rotate(270deg) translate(5.2em) rotate(-270deg); }
+  .pos4 { transform: rotate(342deg) translate(5.2em) rotate(-342deg); }
+
+  .subcircle{
+    line-height:5em;
+    top: -6.5em;
+    width: 4em;
+    height: 4em;
+    padding: 1px;
+    border-radius: 2em;
+    text-align: center;
+    vertical-align:middle;
+    /*
+    float:left;*/
+    /*transition: transform .2s;*/
+
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+
+    -moz-user-select: none;
+    user-select: none;
+    padding: 0;
+    box-shadow:
+      inset 0 2em 10em -5em rgba(255,255,255,0.3),
+      0 0em 0.5em -0.2em rgba(100,100,100,1),
+      0 0em 2em -0.75em rgba(100,100,100,0.75),
+      0 0em 3em -0.5em rgba(100,100,100,0.5),
+      0 0em 3em -0.25em rgba(100,100,100,0.2);
+  }
+
+  .drugs{background: #4285F4;}
+  .games{background: #DB4437;}
+  .shit{background: #F4B400;}
+  .porn{background: #4285F4;}
+  .anime{background: #0F9D58;}
+
+  #content{
+    height:10em;
+    position: fixed;
+    margin:1em;
+    padding:1em;
+    bottom:0em;
+    border-radius: 2em;
+    color:#171b1e;
+    border: 0;
+  }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<div id="tablewrap">
+<table><tr>
+<td id="drugs">
+  <div class="circle drugs">
+    drugs
+    <div class="subcirclewrap">
+      <a href="http://silkroad4n7fwsrw.onion/">
+        <div class="subcircle drugs pos0">
+          silkroad
+        </div>
+      </a>
+      <a href="http://tochka3evlj3sxdv.onion/">
+        <div class="subcircle drugs pos1">
+          tochka
+        </div>
+      </a>
+      <a href="http://6khhxwj7viwe5xjm.onion/">
+        <div class="subcircle drugs pos2">
+          dream market
+        </div>
+      </a>
+      <a href="http://wallstyizjhkrvmj.onion/">
+        <div class="subcircle drugs pos3">
+          wallstreet market
+        </div>
+      </a>
+      <a href="http://4yjes6zfucnh7vcj.onion/">
+        <div class="subcircle drugs pos4">
+          drug market
+        </div>
+      </a>
+    </div>
+
+  </div>
+</td>
+<td id="games"><div class="circle games">games
+  <div class="subcirclewrap">
+    <a href="https://browsergameshub.com/">
+      <div class="subcircle games pos0">
+        html-5 games
+      </div>
+    </a>
+    <a href="https://www.steampowered.com/">
+      <div class="subcircle games pos1">
+        steam
+      </div>
+    </a>
+    <a href="https://www.battle.net/">
+      <div class="subcircle games pos2">
+        battle.net
+      </div>
+    </a>
+    <a href="https://store.playstation.com/de-de/home/games">
+      <div class="subcircle games pos3">
+        playstation store
+      </div>
+    </a>
+    <a href="https://www.ign.com/">
+      <div class="subcircle games pos4">
+        ign
+      </div>
+    </a>
+  </div>
+</div></td>
+<td id="shit"><div class="circle shit">shit
+  <div class="subcirclewrap">
+    <a href="https://www.twitch.tv/">
+      <div class="subcircle shit pos0">
+        twitch
+      </div>
+    </a>
+    <a href="https://www.cytu.be/">
+      <div class="subcircle shit pos1">
+        cytu.be
+      </div>
+    </a>
+    <a href="https://www.cheezburger.com/">
+      <div class="subcircle shit pos2">
+       cheezburger
+      </div>
+    </a>
+    <a href="https://www.4chan.org/">
+      <div class="subcircle shit pos3">
+        4chan
+      </div>
+    </a>
+    <a href="https://www.youtube.com/">
+      <div class="subcircle shit pos4">
+        youtube
+      </div>
+    </a>
+  </div>
+</div></td>
+<td id="porn"><div class="circle porn">porn
+  <div class="subcirclewrap">
+    <a href="https://www.pornhub.com/">
+      <div class="subcircle porn pos0">
+        pornhub
+      </div>
+    </a>
+    <a href="https://www.extremetube.com/">
+      <div class="subcircle porn pos1">
+        extremetube
+      </div>
+    </a>
+    <a href="https://www.chaturbate.com/">
+      <div class="subcircle porn pos2">
+        chaturbate
+      </div>
+    </a>
+    <a href="http://hentaihaven.org/">
+      <div class="subcircle porn pos3">
+        hentai haven
+      </div>
+    </a>
+    <a href="https://www.sex.com/">
+      <div class="subcircle porn pos4">
+        sex.com
+      </div>
+    </a>
+  </div>
+</div></td>
+<td id="anime"><div class="circle anime">anime
+  <div class="subcirclewrap">
+    <a href="https://www.animefreak.tv/">
+      <div class="subcircle anime pos0">
+        animefreak.tv
+      </div>
+    </a>
+    <a href="https://kissanime.ru/">
+      <div class="subcircle anime pos1">
+        kiss anime
+      </div>
+    </a>
+    <a href="https://www.animexd.me/">
+      <div class="subcircle anime pos2">
+        animexd
+      </div>
+    </a>
+    <a href="https://www.crunchyroll.com/">
+      <div class="subcircle anime pos3">
+        crunchyroll
+      </div>
+    </a>
+    <a href="https://gogoanimes.co/">
+      <div class="subcircle anime pos4">
+        gogoanimes
+      </div>
+    </a>
+  </div>
+</div></td>
+</tr></table>
+</div>
+<div id="content"></div>
+
+
+
+<script>
+function loadContent(contentxml) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("content").innerHTML = this.responseText;
+
+     $("#content").css("border", "2px solid gray");
+     $("#content").hide().fadeIn(600);
+    }
+  };
+  xhttp.open("GET", contentxml, true);
+  xhttp.send();
+}
+var activebutton = 5;
+
+$('.circle').hover(function(){
+  var cno = $('.circle').index(this);
+  if(cno != activebutton){
+    $(this).css("transform","scale(1.2)");
+  }
+},function(){
+  var cno = $('.circle').index(this);
+  if(cno != activebutton){
+    $(this).css("transform","scale(1.0)");
+  }
+});
+
+$('.circle').click(function(){
+
+  var cid = $(this).parent().attr('id');
+  var cno = $('.circle').index(this);
+
+  var buttonOff = function(){
+    $('td').eq(cno).find('.subcirclewrap').css({'opacity':'0', 'pointer-events':'none'});
+    $('td').eq(cno).css({'padding-left':'0', 'padding-right':'0'});
+    $('td').eq(cno).find('.circle').css("transform","scale(1.0)");
+  }
+  if(cno != activebutton){ //activate button
+    activebutton = cno;
+    //for(var i = 0; i < $('td').length;i++){
+      //if(i != cno){
+        $('.subcirclewrap').css({'opacity':'0', 'pointer-events':'none'});
+        $('td').css({'padding-left':'0', 'padding-right':'0'});
+        $('.circle').css("transform","scale(1.0)");
+      //}
+    //}
+    $('td').eq(cno).css({'padding-left':'5em', 'padding-right':'5em'});
+    $(this).css("transform","scale(1.2)");
+    $(this).find('.subcirclewrap').css({'opacity':'1', 'pointer-events':'auto'});
+    //...("transform", "rotate(54deg) translate(5.2em) rotate(-54deg)");
+    //$(this).find('.pos0').css("opacity","1");
+    // .pos0 { transition: transform 2s; } /* 9em = half the width of the wrapper */
+    // .pos1 { transform: rotate(126deg) translate(5.2em) rotate(-126deg); }
+    // .pos2 { transform: rotate(198deg) translate(5.2em) rotate(-198deg); }
+    // .pos3 { transform: rotate(270deg) translate(5.2em) rotate(-270deg); }
+    // .pos4 { transform: rotate(342deg) translate(5.2em) rotate(-342deg); }
+
+
+    var resetpad = function(){
+      buttonOff();
+      activebutton = 5;
+    };
+    setTimeout(resetpad, 20000);//remove 1 zero
+  } else { //deactivate button when it's clicked while active
+    buttonOff();
+    activebutton = 5;
+  }
+});
+
+
+
+</script>
+</body>
+</html>

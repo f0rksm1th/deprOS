@@ -1,0 +1,41 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+/*#fullscr-toggler { display:none!important; }*/
+
+statuspanel, #PanelUI-button, #urlbar-container, #search-container, #openLocation, #menubar { display:none!important;}
+#TabsToolbar {   height: 0px !important; overflow: hidden !important;}
+
+
+
+/* tabs to bottom */
+/*
+#browser-panel {
+	-moz-box-direction: reverse;
+	padding: 0 !important;
+}*/
+#navigator-toolbox {
+  -moz-box-ordinal-group: 2;
+}
+#main-window[sizemode="maximized"] {
+	padding-top: 7px !important;
+}
+/* hide tab toolbar when fullscreen */
+
+/*#nav-bar[inFullscreen],*/
+#TabsToolbar[inFullscreen] {
+	display: none;
+}
+
+/* hide titlebar */
+/*
+#titlebar {
+	display: none !important;
+}
+*/
+#PopupAutoCompleteRichResult { display: none; }
+
+#navigator-toolbox::after {
+	border-bottom: 0px !important;
+}
+
+#fullscr-toggler { background-color: rgba(0, 0, 0, 0) !important; }

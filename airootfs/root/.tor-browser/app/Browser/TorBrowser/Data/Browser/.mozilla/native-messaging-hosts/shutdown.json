@@ -1,0 +1,7 @@
+{
+  "name": "shutdown",
+  "description": "Shutdown the OS from Tor Browser for deprOS",
+  "path": "/root/.tor-browser/app/Browser/TorBrowser/Data/Browser/.mozilla/systemextensionsdev/shutdown/shutdown.py",
+  "type": "stdio",
+  "allowed_extensions": [ "kill@depr.os" ]
+}

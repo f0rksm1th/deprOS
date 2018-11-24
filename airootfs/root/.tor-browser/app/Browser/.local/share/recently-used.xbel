@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///root/.tor-browser/app/Browser/updater" added="2018-11-22T23:41:44Z" modified="2018-11-22T23:41:44Z" visited="2018-11-22T23:41:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-11-22T23:41:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.tor-browser/app/Browser/TorBrowser/Data/Browser/.mozilla/systemextensionsdev/shutdown/manifest.json" added="2018-11-22T23:42:44Z" modified="2018-11-23T10:06:36Z" visited="2018-11-22T23:42:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-11-23T10:06:36Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.tor-browser/app/Browser/TorBrowser/Data/Browser/.mozilla/systemextensionsdev/add-on/manifest.json" added="2018-11-22T23:55:06Z" modified="2018-11-23T00:02:26Z" visited="2018-11-22T23:55:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-11-23T00:02:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.tor-browser/app/Browser/TorBrowser/Data/Browser/.mozilla/systemextensionsdev/shutdown.xpi" added="2018-11-23T10:26:08Z" modified="2018-11-23T10:26:08Z" visited="2018-11-23T10:26:09.248910Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xpinstall"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-11-23T10:26:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
