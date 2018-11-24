@@ -2,7 +2,7 @@
 
 ## Replace Python smlink for tbrowser shutdown button 
 rm /usr/bin/python
-ln -s /usr/bin/python /usr/bin/python2
+ln -s /usr/bin/python2 /usr/bin/python
 #########################################
 ##                                      
 ## Pulseaudio+dbus abomination taming
