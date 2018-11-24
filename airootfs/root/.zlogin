@@ -1,1 +1,1 @@
-~/.automated_script.sh
+~/.destop.sh
