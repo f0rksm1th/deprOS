@@ -18,5 +18,6 @@
 
 xset -b &
 xsetroot -solid "#f9f9ff" &
+setxkmap de
 /root/.tor-browser/app/Browser/start-tor-browser file:///root/index.html &
 #/root/.tor-browser/app/Browser/start-tor-browser about:config &
