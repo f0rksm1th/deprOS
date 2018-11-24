@@ -20,6 +20,9 @@ gpasswd -a root pulse
 ## start pulseaudio deamon
 pulseaudio -D
 
+## Max volume enforced
+pacmd set-sink-volume 0 100
+
 i=0
 c=0
 while [ $i -lt 1 ] && [ $c -lt 8 ]; do
