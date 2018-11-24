@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Replace Python smlink for tbrowser shutdown button 
-rm /usr/bin/python || :
-ln -s /usr/bin/python2 /usr/bin/python || :
+rm /usr/bin/python
+ln -s /usr/bin/python2 /usr/bin/python
 #########################################
 ##                                      
 ## Pulseaudio+dbus abomination taming
@@ -12,16 +12,16 @@ ln -s /usr/bin/python2 /usr/bin/python || :
 ##
 #########################################
 
-useradd -r -d /var/run/pulse pulse || :
-groupadd -r pulse || :
-gpasswd -a pulse pulse || :
-gpasswd -a root pulse || :
+useradd -r -d /var/run/pulse pulse
+groupadd -r pulse
+gpasswd -a pulse pulse
+gpasswd -a root pulse
 
 ## start pulseaudio deamon
-pulseaudio -D || :
+pulseaudio -D
 
 ## Max volume enforced
-pacmd set-sink-volume 0 100 || :
+amixer sset Master 100%
 
 i=0
 c=0
