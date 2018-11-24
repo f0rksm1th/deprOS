@@ -31,5 +31,5 @@ automated_script ()
 
 if [[ $(tty) == "/dev/tty1" ]]; then
     #automated_script
-    /root/desktop.sh
+    #/root/desktop.sh
 fi
