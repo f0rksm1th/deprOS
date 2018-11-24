@@ -1,1 +1,1 @@
-~/.destop.sh
+~/.desktop.sh
